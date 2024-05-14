@@ -1,4 +1,3 @@
-//alert("Hola mundo");
 let adelante =document.getElementById("adelante");
 let atras =document.getElementById("atras");
 let izquierda =document.getElementById("izquierda");
@@ -12,7 +11,7 @@ function callApi(estatus) {
   // Hacer una petición para un usuario con ID especifico
   axios
     .get(
-      "http://localhost/iot-car-control/back-end/apis/setRegistro.php?valorEstatus=" +
+      "http://18.223.241.111/iot-car-control/back-end/apis/setRegistro.php?valorEstatus=" +
         estatus
     )
     .then(function (response) {
